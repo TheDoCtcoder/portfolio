@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* Reset pour enlever les marges externes et internes sur tous les éléments */
+/*:font-family: 'Teko', sans-serif; */
+/*font-family: 'Alfa Slab One', cursive; */
+/* font-family: 'Josefin Sans', sans-serif;  */
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(157, 201, 255); */
+    background-color: rgb(2, 35, 126);
+    /* background-color: rgb(255, 255, 255); */
+}
+
+a.brand-logo {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 10px;
+    color: chartreuse;
+}
+
+h1 {
+    font-size: 1.1rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(9, 68, 141);
+    border: 1px solid black;
+    margin-top: 0;
+    padding: 15px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.3rem;
+}
+
+
+ul li a {
+    color: white;
+
+}
+
+
+
+
+
+
+.projet .card:hover {
+    transform: scale(1.1);
+    transition: ease-in 0.8s;
+}
+
+.projet img {
+    margin-bottom: 15px;
+}
+
+.projet p {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.projet .card-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+
+}
+
+.projet .card-content {
+min-height: 370px;
+}
+
+.projet .card {
+    border-radius: 5px;
+}
+
+.pub {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.entete p {
+    animation-name: example;
+    animation-duration: 2s;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+
+}
+
+@keyframes example {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+.entete p:hover {
+
+    transform: rotate(-0.02turn);
+    transition: ease-in 0.8s;
+
+}
+
+
+.entete {
+    margin: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.competence img {
+    width: 200px;
+    height: 200px;
+}
+
+.carousel {
+
+    min-height: 400px;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+}
+
+form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+iframe {
+    margin-top: 24px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+div#carte {
+    margin: 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+a.brand-logo {
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 0;
+}
+
+div#entete.row {
+    margin: 0;
+}
+
+.card1 {
+    position: relative;
+    width: 350px;
+    height: 85px;
+    background: #09448d;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(-20px 20px 40px #398cc055);
+}
+
+.card1.active {
+    /* height: 420px; */
+    height: 440px;
+}
+
+.toggle1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -60px;
+    width: 70px;
+    height: 60px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background: #09448d;
+    cursor: pointer;
+}
+
+.toggle1::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border-top-right-radius: 35px;
+    box-shadow: 11px -10px 0 10px #09448d;
+}
+
+.toggle1::after {
+    content: '';
+    position: absolute;
+    right: -34px;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border-top-left-radius: 35px;
+    box-shadow: -11px -10px 0 10px #09448d;
+    /* background-color:#09448d; */
+}
+
+.toggle1 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%) rotate(405deg);
+    width: 10px;
+    height: 10px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: 0.5s;
+}
+
+.card1.active .toggle1 span {
+    transform: translate(-50%, -70%) rotate(225deg);
+}
+
+.contentBx {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2 {
+    margin-top: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content h2 span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: initial;
+}
+
+.imgBx {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    margin-top: 20px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content button {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 35px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.15);
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: #333;
+}
+
+div.police {
+    /* background-color: rgb(1, 20, 123); */
+    border-radius: 10px;
+    margin-bottom: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+div#blue {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 51%, rgba(0, 212, 255, 1) 100%);
+}
+
+div#jaune {
+    background: rgb(255, 231, 0);
+    background: linear-gradient(90deg, rgba(255, 231, 0, 1) 0%, rgba(255, 0, 0, 1) 51%, rgba(255, 231, 0, 1) 100%);
+}
+
+div#mauve {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+div#verte {
+    background: rgb(194, 250, 199);
+    background: linear-gradient(90deg, rgba(194, 250, 199, 1) 0%, rgba(26, 255, 0, 1) 51%, rgba(194, 250, 199, 1) 100%);
+}
+
+@media screen and (max-width: 565px) {
+    iframe {
+        width: min-content;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    iframe {
+        display: flex;
+        width: max-content;
+        margin: 0 auto;
+    }
+    
+
+}
+
+@media screen and (min-width: 992px)   {
+
+
+    .projet .card-content {
+        height: 200px;
+    }
+    
+
+}
